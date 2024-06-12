@@ -1,4 +1,4 @@
-if(Get-ScheduledTask | Where-Object{$_.taskname -match "Install_agent_SOC"}){
+if(Get-ScheduledTask | Where-Object{$_.taskname -match "Install_agent_SOC" -or $_.taskname -match "installSoc"}){
     break
 }   
     else{
